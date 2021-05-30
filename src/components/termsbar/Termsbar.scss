@@ -1,0 +1,23 @@
+.termsbarcontainer {
+    padding: 0 15px;
+    margin-top: 30px;
+    margin-bottom: 80px;
+    div {
+        display: flex;
+        flex-wrap: wrap;
+        a {
+            margin: 5px;
+            text-decoration: none;
+            font-size: 14px;
+            color: rgb(102, 104, 105);
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+        p {
+            margin: 0 5px;
+            font-size: 14px;
+            color: rgb(102, 104, 105);
+        }
+    }
+}

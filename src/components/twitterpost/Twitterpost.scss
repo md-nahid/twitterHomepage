@@ -1,0 +1,129 @@
+.twitterpostcontainer {
+    padding: 15px;
+    display: flex;
+    flex-wrap: nowrap;
+    margin-top: 10px;
+    background-color: rgb(255, 255, 255);
+    border-top: 1px solid rgb(235, 238, 240);
+    border-bottom: 1px solid rgb(235, 238, 240);
+    &:hover {
+        cursor: pointer;
+        background-color: rgba(209, 205, 205, 0.288);
+    }
+    .userimg {
+        img {
+            max-width: 70px;
+            max-height: 70px;
+            width: 100%;
+            border-radius: 50px;
+        }
+    }
+    .userpostsection {
+        width: 100%;
+        padding-left: 10px;
+        .postheader {
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+            align-items: center;
+            .userinfo {
+                a {
+                    text-decoration: none;
+                    font-size: 14px;
+                    font-weight: bolder;
+                    color: rgb(24, 22, 22);
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+            .moreicon {
+                font-size: 22px;
+                padding: 10px;
+                border-radius: 50px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                &:hover {
+                    cursor: pointer;
+                    background-color: rgba(143, 188, 240, 0.185);
+                    color: rgb(21, 108, 207);
+                }
+            }
+        }
+        .postmain {
+            .posttext {
+                font-size: 15px;
+                color: rgba(76, 77, 78, 0.89);
+            }
+            .postimg {
+                width: 100%;
+                img {
+                    width: 100%;
+                    border-radius: 25px;
+                    padding: 10px;
+                }
+            }
+        }
+        .postfooter {
+            .differenticons {
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                div {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    color: rgb(91, 112, 131);
+                    span {
+                        font-size: 15px;
+                        width: 30px;
+                        height: 30px;
+                        border-radius: 50px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        margin-right: 5px;
+                        font-size: large;
+                    }
+                    &:first-child {
+                        &:hover {
+                            cursor: pointer;
+                            color: rgb(23, 102, 219);
+                            span {
+                                background-color: rgba(116, 138, 238, 0.212);;
+                            }
+                        }
+                    }
+                    &:nth-child(2) {
+                        &:hover {
+                            cursor: pointer;
+                            color: rgb(57, 168, 30);
+                            span {
+                                background-color: rgba(87, 228, 87, 0.212);;
+                            }
+                        }
+                    }
+                    &:nth-child(3) {
+                        &:hover {
+                            cursor: pointer;
+                            color: rgb(185, 12, 12);
+                            span {
+                                background-color: rgba(245, 112, 112, 0.212);;
+                            }
+                        }
+                    }
+                    &:last-child {
+                        &:hover {
+                            cursor: pointer;
+                            color: rgb(23, 102, 219);
+                            span {
+                                background-color: rgba(116, 138, 238, 0.212);;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

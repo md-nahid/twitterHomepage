@@ -1,0 +1,105 @@
+.tweetsectioncontainer {
+    padding: 15px 15px 0 15px;
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: rgb(255, 255, 255);
+    border-bottom: 1px solid rgb(235, 235, 235);
+    .postimgsection {
+        img {
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+        }
+    }
+    .posttextsection {
+        width: 100%;
+        textarea {
+            font-size: 18px;
+            padding: 8px 10px;
+            border: none;
+            outline: none;
+            width: inherit;
+            resize: none;
+            overflow: hidden;
+            font-family: 'Open Sans', sans-serif;
+            &::placeholder {
+                font-family: 'Open Sans', sans-serif;
+            }
+        }
+        .privacy {
+            border-bottom: 1px solid #e2e3e48c;
+            display: none;
+            button {
+                padding: 10px;
+                display: flex;
+                align-items: center;
+                border-radius: 50px;
+                border: none;
+                outline: none;
+                font-size: 13px;
+                font-family: 'Open Sans', sans-serif;
+                font-weight: bold;
+                background: transparent;
+                color: rgb(48, 179, 219);
+                &:hover {
+                    cursor: pointer;
+                    background-color: rgba(47, 190, 233, 0.075);
+                }
+                span {
+                    display: flex;
+                    align-items: center;
+                    margin-right: 5px;
+                    font-size: 22px;
+                }
+            }
+        }
+        .otherattachments {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            .otherattachmentsicons {
+                display: inherit;
+                align-items: inherit;
+                span {
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 50px;
+                    display: inherit;
+                    justify-content: center;
+                    align-items: inherit;
+                    font-size: 20px;
+                    font-weight: 700;
+                    color: rgb(38, 175, 238);
+                    &:first-child {
+                        svg {
+                            path {
+                                stroke: #26afee;
+                            }
+                        }
+                    }
+                    &:hover {
+                        cursor: pointer;
+                        background-color: rgba(47, 190, 233, 0.075);
+                    }
+                }
+            }
+            .otherattachmentsbutton {
+                display: inherit;
+                align-items: inherit;
+                button {
+                    padding: 8px 20px;
+                    background-color: rgb(54, 182, 241);
+                    font-size: 18px;
+                    border: none;
+                    outline: none;
+                    color: #ffffff;
+                    border-radius: 50px;
+                    &:hover {
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+}

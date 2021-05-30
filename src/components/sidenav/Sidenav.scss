@@ -1,0 +1,215 @@
+.homePageSidenav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 100vh;
+    max-width: 300px;
+    @media only screen and (max-width: 1280px) {
+        
+    }
+    nav {
+        width: 100%;
+        ul {
+            list-style-type: none;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            @media only screen and (max-width: 1280px) {
+                align-items: center;
+            }
+            @media only screen and (max-height: 614px) {
+                .bookmarksidemenu, .listssidemenu {
+                    display: none;
+                }
+            }
+            li {
+                cursor: pointer;
+                @media only screen and (max-width: 616px) {
+                    padding: 0 5px;
+                }
+                &:hover:not(:first-child) a {
+                    color: rgba(29,161,242,1.00);
+                    background-color: rgba(29,161,242,0.1);
+                }
+                &:first-child {
+                    a {
+                        font-size: 30px;
+                        color: rgb(47, 189, 233);
+                        &:hover {
+                            background-color: rgba(97, 186, 221, 0.123);
+                            color: rgb(47, 189, 233);
+                        }
+                        svg {
+                            margin-right: 0;
+                        }
+                    }
+                } 
+                a {
+                    text-decoration: none;
+                    outline: none;
+                    border: none;
+                    padding: 11px 13px;
+                    font-size: 20px;
+                    font-weight: 700;
+                    border-radius: 50px;
+                    display: inline-flex;
+                    color: rgb(45, 46, 45);
+                    
+                    svg {
+                        margin-right: 15px;
+                        font-size: 28px;
+                        @media only screen and (max-width: 1280px) {
+                            margin-right: 0;
+                            font-size: 30px;
+                            font-weight: 100;
+                        }
+                    }
+                    span {
+                        @media only screen and (max-width: 1280px) {
+                            display: none;
+                        }
+                    }
+                }
+            }
+            .active {
+                a {
+                    color: rgb(47, 189, 233);
+                }
+            }
+        }
+        .tweetbtn {
+            display: flex;
+            margin-top: 10px;
+            justify-content: flex-start;
+            @media only screen and (max-width: 1280px) {
+                justify-content: center;
+            }
+            .tweetbtntext {
+                width: 80%;
+                padding: 15px 15px;
+                border: none;
+                border-radius: 50px;
+                background-color: rgb(72, 171, 233);
+                font-size: 15px;
+                font-weight: 700;
+                color: #ffffff;
+                text-align: center;
+                &:hover {
+                    cursor: pointer;
+                    background-color: rgb(53, 159, 201);
+                }
+                @media only screen and (max-width: 1280px) {
+                    display: none;
+                }
+            }
+            .tweetbtnicon {
+                width: 50px;
+                height: 50px;
+                display: none;
+                background-color: rgb(26, 145, 218);
+                border-radius: 50px;
+                border: none;
+                &:hover {
+                    cursor: pointer;
+                    background-color: rgb(53, 159, 201);
+                }
+                @media only screen and (max-width: 1280px) {
+                    display: block;
+                }
+            }
+        }
+    }
+    .profileBtncontainer {
+        position: relative;
+        .popover {
+            display: none;
+            position: absolute;
+            background-color: #ffffff;
+            left: 10%;
+            bottom: 120%;
+            border-radius: 20px;
+            box-shadow: 0px 2px 4px 2px rgba(207, 195, 195, 0.432);
+            div {
+                .profileBtn {
+                    margin: 0;
+                    &:hover {
+                        background-color: #ffffff00;
+                    }
+
+                    .moreIcon {
+                        color: #2743e0;
+                    }
+                }
+            }
+            .line1 {
+                &:not(:last-child) {
+                    border-bottom: 1px solid rgba(172, 168, 168, 0.521);
+                }
+                padding: 20px 10px;
+                cursor: pointer;
+            }
+        }
+        .profileBtn {
+            padding: 10px;
+            margin-right: 15px;
+            margin-bottom: 10px;
+            width: auto;
+            display: flex;
+            justify-content: space-around;
+            align-self: center;
+            border-radius: 50px;
+            border: none;
+            background: transparent;
+            outline: none;
+            &:hover {
+                cursor: pointer;
+                background-color: rgba(121, 196, 226, 0.151);
+            }
+            @media only screen and (max-width: 1280px) {
+                padding: 5px;
+                margin-right: 0;
+            }
+            .imgContainer {
+                width: 50px;
+                height: 50px;
+                margin-right: 15px;
+                @media only screen and (max-width: 1280px) {
+                    margin-right: 0;
+                }
+                img {
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 50px;
+                }
+            }
+            .nameId {
+                text-align: left;
+                display: flex;
+                align-self: center;
+                flex-direction: column;
+                @media only screen and (max-width: 1280px) {
+                    display: none;
+                }
+                h6 {
+                    font-size: 15px;
+                    font-weight: 700;
+                }
+                p {
+                    color: grey;
+                }
+            }
+            .moreIcon {
+                font-size: 25px;
+                font-weight: 700;
+                display: flex;
+                align-self: center;
+                margin-left: 15px;
+                @media only screen and (max-width: 1280px) {
+                    display: none;
+                    margin-left: 0;
+                }
+            }
+        }
+    }
+}
