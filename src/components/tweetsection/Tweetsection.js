@@ -1,8 +1,6 @@
 import React, { useState } from 'react';
 import "./Tweetsection.scss";
 import Userphoto from "../../images/userphoto.png";
-// import { BsCardImage } from "react-icons/bs";
-// import { IoImageOutline } from "react-icons/io";
 import { AiFillSchedule, AiOutlineForm } from "react-icons/ai";
 import { BiPoll, BiWorld } from "react-icons/bi";
 import { GrEmoji, GrImage } from "react-icons/gr";
@@ -12,6 +10,7 @@ import { GrEmoji, GrImage } from "react-icons/gr";
 const Tweetsection = () => {
 
 const [ Textarea, setTextarea ] = useState("");
+
 
 function handleChange(e) {
     setTextarea(e.target.value);

@@ -9,9 +9,6 @@ import { RiFileList2Line } from "react-icons/ri";
 import { CgMoreO } from "react-icons/cg";
 import { MdMoreHoriz } from "react-icons/md"
 
-
-
-
 // import images
 import userPhoto from "../../images/userphoto.png"
 import Tweeticon from "../../images/tweeticon.png"
