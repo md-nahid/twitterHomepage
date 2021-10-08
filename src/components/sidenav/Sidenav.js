@@ -13,7 +13,6 @@ import { MdMoreHoriz } from "react-icons/md"
 import userPhoto from "../../images/userphoto.png"
 import Tweeticon from "../../images/tweeticon.png"
 
-
 const Sidenav = () => {
 // popover display function
     function popoverFucntion () {

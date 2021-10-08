@@ -5,8 +5,9 @@
     align-items: center;
     min-height: 100vh;
     max-width: 300px;
+    position: sticky;
+    top: 0;
     @media only screen and (max-width: 1280px) {
-        
     }
     nav {
         width: 100%;
