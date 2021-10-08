@@ -24,12 +24,13 @@ const Home = () => {
                         <Homebartop />
                         <Tweetsection />
                         {post.map((item) => (
-                            <Twitterpost userImg={item.userimg}
-                                    userName={item.username}
-                                    userProfileLink={item.userprofilelink}
-                                    postTime={item.posttime}
-                                    postText={item.posttext}
-                                    postImg={item.postimg}/>
+                            <Twitterpost key={item.id} 
+                                userImg={item.userimg}
+                                userName={item.username}
+                                userProfileLink={item.userprofilelink}
+                                postTime={item.posttime}
+                                postText={item.posttext}
+                                postImg={item.postimg}/>
                         ))}
                     </div>
                     <div className="col-4">
