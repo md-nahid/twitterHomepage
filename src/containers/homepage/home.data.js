@@ -2,12 +2,9 @@ import UserImg from "../../images/userphoto.png"
 import Captain from "../../images/twitterpost.jpg"
 import Twitterpost2 from "../../images/twitterpost2.jpg"
 
-
-
-
 export const post = [
     {
-        id: 01,
+        id: "01",
         userimg: UserImg,
         username: "Nahid",
         userprofilelink: "@nahid98a",
@@ -16,7 +13,7 @@ export const post = [
         postimg: Captain,
     },
     {
-        id: 02,
+        id: "02",
         userimg: UserImg,
         username: "Nahid",
         userprofilelink: "nahid98a",
@@ -25,7 +22,7 @@ export const post = [
         postimg: Twitterpost2,
     },
     {
-        id: 03,
+        id: "03",
         userimg: UserImg,
         username: "Nahid",
         userprofilelink: "nahid98a",
@@ -34,7 +31,7 @@ export const post = [
         postimg: Captain,
     },
     {
-        id: 04,
+        id: "04",
         userimg: UserImg,
         username: "Nahid",
         userprofilelink: "nahid98a",
