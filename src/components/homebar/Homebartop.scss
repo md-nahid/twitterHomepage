@@ -11,14 +11,21 @@
         align-items: center;
         img {
             width: 40px;
-
         }
         div {
+            padding: 12px 0;
             h3 {
-                padding: 0 15px;
+                padding: 0;
+                @media only screen and (max-width: 1024px) {
+                    padding: 0 15px;
+                }
             }
             img {
-                border-radius: 50%;
+                border-radius: 60%;
+                display: none;
+                @media only screen and (max-width: 1024px) {
+                    display: block;
+                }
             }
         }
     }

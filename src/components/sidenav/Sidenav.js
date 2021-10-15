@@ -1,13 +1,9 @@
 import React from 'react';
-import { Link } from "react-router-dom"
+import { NavLink } from "react-router-dom"
 import "./Sidenav.scss";
-import { BiHomeCircle } from "react-icons/bi";
-import { FiHash } from "react-icons/fi";
-import { AiOutlineBell, AiOutlineMail, AiOutlineUser, AiOutlineTwitter, AiOutlineCheck } from "react-icons/ai";
-import { BsBookmark } from "react-icons/bs";
-import { RiFileList2Line } from "react-icons/ri";
-import { CgMoreO } from "react-icons/cg";
+import { SidenavData } from "./Sidenav.data"
 import { MdMoreHoriz } from "react-icons/md"
+import { AiOutlineCheck } from "react-icons/ai"
 
 // import images
 import userPhoto from "../../images/userphoto.png"
@@ -30,25 +26,15 @@ const Sidenav = () => {
             popover.style.display = "none";
         }
     }
-
-
-
-
-
+    
     return (
         <div className="homePageSidenav">
         {/* side navigation bar start */}
             <nav>
                 <ul>
-                    <li><Link to="/"><AiOutlineTwitter /></Link></li>
-                    <li className="active"><Link to="/"><BiHomeCircle /> <span>Home</span></Link></li>
-                    <li><Link to="/"><FiHash /> <span>Explore</span></Link></li>
-                    <li><Link to="/"><AiOutlineBell /> <span>Notifications</span></Link></li>
-                    <li><Link to="/"><AiOutlineMail /> <span>Messages</span></Link></li>
-                    <li className="bookmarksidemenu"><Link to="/"><BsBookmark /> <span>Bookmarks</span></Link></li>
-                    <li className="listssidemenu"><Link to="/"><RiFileList2Line /> <span>Lists</span></Link></li>
-                    <li><Link to="/"><AiOutlineUser /> <span>Profile</span></Link></li>
-                    <li><Link to="/"><CgMoreO /> <span>More</span></Link></li>
+                { SidenavData.map( (item) => (
+                    <li key={item.id}><NavLink exact activeClassName="main-nav-active" to={item.pathname}>{item.icon} <span>{item.name}</span></NavLink></li>
+                ))}
                 </ul>
                 <div className="tweetbtn">
                     <button className="tweetbtntext">Tweet</button>

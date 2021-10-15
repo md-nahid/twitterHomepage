@@ -1,42 +1,65 @@
-export const sidenavData = [
+import React from "react"
+import { BiHomeCircle } from "react-icons/bi";
+import { FiHash } from "react-icons/fi";
+import { AiOutlineBell, AiOutlineMail, AiOutlineUser, AiOutlineTwitter } from "react-icons/ai";
+import { BsBookmark } from "react-icons/bs";
+import { RiFileList2Line } from "react-icons/ri";
+import { CgMoreO } from "react-icons/cg";
+
+
+export const SidenavData = [
     {
-        id: 1,
+        id: "01",
+        name: '',
+        icon: <AiOutlineTwitter />,
+        pathname: "/thome"
+    },
+    {
+        id: "02",
         name: 'Home',
-        icon: "BiHomeCircle"
+        icon: <BiHomeCircle />,
+        pathname: "/thome"
     },
     {
-        id: 2,
+        id: "03",
         name: 'Explore',
-        icon: ""
+        icon: <FiHash />,
+        pathname: "/explore"
     },
     {
-        id: 3,
+        id: "04",
         name: 'Notifications',
-        icon: ""
+        icon: <AiOutlineBell />,
+        pathname: "/notifications"
     },
     {
-        id: 4,
+        id: "05",
         name: 'Messages',
-        icon: ""
+        icon: <AiOutlineMail />,
+        pathname: "/messages"
     },
     {
-        id: 5,
+        id: "06",
         name: 'Bookmarks',
-        icon: ""
+        icon: <BsBookmark />,
+        pathname: "/bookmarks"
     },
     {
-        id: 6,
+        id: "07",
         name: 'Lists',
-        icon: ""
+        icon: <RiFileList2Line />,
+        pathname: "/lists"
     },
     {
-        id: 7,
-        name: 'Prifile',
-        icon: ""
+        id: "08",
+        name: 'Profile',
+        icon: <AiOutlineUser />,
+        pathname: "/profile"
     },
     {
-        id: 8,
+        id: "09",
         name: 'More',
-        icon: ""
-    },
+        icon: <CgMoreO />,
+        pathname: "/thome"
+    }
 ] 

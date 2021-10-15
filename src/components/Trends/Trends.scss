@@ -1,6 +1,5 @@
 .trends{
     .trendscontainer {
-        margin: 20px 20px 0 20px;
         background-color: rgb(247, 249, 250);
         border-radius: 12px;
         .trendsheader {
@@ -8,7 +7,7 @@
             justify-content: space-between;
             align-self: center;
             border-bottom: 1px solid rgb(235, 238, 240);
-            padding: 10px 20px;
+            padding: 10px;
             h4 {
                 display: flex;
                 justify-content: center;
@@ -69,7 +68,6 @@
                 padding: 15px 20px;
                 font-weight: 600;
                 display: block;
-                border-radius: 0 0 12px 12px;
                 &:hover {
                     background-color: rgba(209, 205, 205, 0.288);
                 }
