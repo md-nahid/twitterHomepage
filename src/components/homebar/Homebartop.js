@@ -3,10 +3,6 @@ import "./Homebartop.scss"
 import Staricon from "../../images/staricon.jpg"
 import Userimg from "../../images/userphoto.png"
 
-
-
-
-
 const Homebartop = () => {
     return (
         <div className="homebartopcontainer">

@@ -60,6 +60,6 @@ export const SidenavData = [
         id: "09",
         name: 'More',
         icon: <CgMoreO />,
-        pathname: "/thome"
+        pathname: ""
     }
 ] 

@@ -7,6 +7,7 @@ import Twitterpost from '../../components/twitterpost/Twitterpost'
 import { post } from "./Explorepage.data"
 import Whotofollw from "../../components/whotofollow/Whotofollow"
 import Termsbar from "../../components/termsbar/Termsbar"
+import { AiOutlineSetting } from "react-icons/ai"
 import "./Explorepage.scss"
 
 const Explorepage = () => {
@@ -18,7 +19,10 @@ const Explorepage = () => {
                     <Sidenav />
                 </div>
                 <div className="col-5">
-                       <Searchtwitter />
+                       <Searchtwitter placeholder="Search Twitter"
+                                    ExtraIcon1={<AiOutlineSetting />}
+                                    IconAllDisplay="flex"
+                                    IconDivDisplay="flex"/>
                        <Trends />
                        {post.map((item) => (
                         <Twitterpost key={item.id} 
