@@ -1,20 +1,35 @@
 import React from 'react'
-import "./Homebartop.scss"
-import Staricon from "../../images/staricon.jpg"
+import PropTypes from 'prop-types'
 import Userimg from "../../images/userphoto.png"
+import { Wrapper, LeftSide, RightSide } from "./Homebartop.styled"
 
-const Homebartop = () => {
+const Homebartop = ({ text, wrapperJustified, wrapperAligned, TopbarIcon, Someimg, borderBottom }) => {
     return (
-        <div className="homebartopcontainer">
-            <div>
-                <div>
-                    <img src={Userimg} alt="This is user." />
-                    <h3>Home</h3>
-                </div>
-                <img src={Staricon} alt="twitter star icon" />
-            </div>
-        </div>
+       <Wrapper wrapperJustified={wrapperJustified} wrapperAligned={wrapperAligned} borderBottom={borderBottom}>
+        <LeftSide>
+          <img src={Userimg} alt="Userimg" />
+          <h3>{text}</h3>
+        </LeftSide>
+        <RightSide>
+          <div>
+            {Someimg ? <img src={Someimg} alt="a"/> : "" } 
+            {TopbarIcon ? <span>{TopbarIcon}</span> : "" }
+          </div>
+        </RightSide>       
+       </Wrapper>
     )
 }
+
+
+Homebartop.propTypes = {
+    text: PropTypes.string,
+    wrapperJustified: PropTypes.string,
+    wrapperAligned: PropTypes.string,
+    TopbarIcon: PropTypes.object,
+    Someimg: PropTypes.string,
+    borderBottom: PropTypes.string
+}
+
+
 
 export default Homebartop

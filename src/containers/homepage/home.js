@@ -10,6 +10,7 @@ import Tweetsection from '../../components/tweetsection/Tweetsection'
 import Twitterpost from '../../components/twitterpost/Twitterpost'
 import Mobilemenu from "../../components/mobileMenu/Mobilemenu"
 import { post } from "./home.data"
+import Staricon from "../../images/staricon.jpg"
 
 
 const Home = () => {
@@ -21,7 +22,12 @@ const Home = () => {
                         <Sidenav />
                     </div>
                     <div className="col-5">
-                        <Homebartop />
+                        <Homebartop 
+                            text="Home" 
+                            wrapperJustified="space-between" 
+                            Someimg={Staricon}
+                            borderBottom="1px solid #ccc"
+                             />
                         <Tweetsection />
                         {post.map((item) => (
                             <Twitterpost key={item.id} 

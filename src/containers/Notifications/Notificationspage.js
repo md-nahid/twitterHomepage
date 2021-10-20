@@ -7,6 +7,8 @@ import SearchTwitter from '../../components/searchtwitter/searchTwitter'
 import Whotofollow from '../../components/whotofollow/Whotofollow'
 import Termsbar from '../../components/termsbar/Termsbar'
 import Homebartop from "../../components/homebar/Homebartop"
+import { AiOutlineSetting } from "react-icons/ai"
+
 
 const Notificationspage = () => {
     return (
@@ -17,7 +19,9 @@ const Notificationspage = () => {
                 <Sidenav />
             </div>
             <div className="col-5">
-                   <Homebartop />
+                   <Homebartop text="Notifications"
+                               TopbarIcon={<AiOutlineSetting />}
+                               wrapperJustified="space-between" />
             </div>
             <div className="col-4">
               <SearchTwitter placeholder="Search Twitter" />
