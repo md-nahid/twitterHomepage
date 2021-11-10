@@ -1,12 +1,6 @@
 import React from 'react'
 import Button from "../button/Button"
-import WhiteButton from "../whitebutton/Whitebutton"
 import "./BannerTwo.scss"
-
-
-
-// importing images
-// import TwitterBird from "../../images/twitter-icon.png"
 import { FaTwitter } from "react-icons/fa"
 
 
@@ -21,8 +15,8 @@ const Bannertwo = () => {
                     <h2>See what’s happening in the world right now</h2>
                 </div>
                 <h4>Join Twitter today.</h4>
-                <Button />
-                <WhiteButton />
+                <Button pathname="/register" BtnText="Sign up" />
+                <Button pathname="/login" BtnText="Log in" color="rgb(29, 161, 242)" backgroundColor="rgb(255, 255, 255)" border="2px solid rgb(29, 161, 242)" margin="10px 0 0 0" />
             </div>
         </div>
     )

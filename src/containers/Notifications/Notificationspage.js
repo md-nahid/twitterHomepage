@@ -9,7 +9,6 @@ import Termsbar from '../../components/termsbar/Termsbar'
 import Homebartop from "../../components/homebar/Homebartop"
 import { AiOutlineSetting } from "react-icons/ai"
 
-
 const Notificationspage = () => {
     return (
         <div>
@@ -19,9 +18,10 @@ const Notificationspage = () => {
                 <Sidenav />
             </div>
             <div className="col-5">
-                   <Homebartop text="Notifications"
-                               TopbarIcon={<AiOutlineSetting />}
-                               wrapperJustified="space-between" />
+                <Homebartop text="Notifications"
+                            TopbarIcon={<AiOutlineSetting />}
+                            wrapperJustified="space-between" />
+                
             </div>
             <div className="col-4">
               <SearchTwitter placeholder="Search Twitter" />
