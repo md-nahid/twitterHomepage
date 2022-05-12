@@ -2,7 +2,7 @@
 ## Twitter Home page cloned
 Cloned twitter home page with react.
 
-## Live Link [Click Herer](https://twitter-homepage.vercel.app/)
+## Live Link [Click Here](https://twitter-homepage.vercel.app/)
 Hosted on vercel.
 
 ## Used Technologies
